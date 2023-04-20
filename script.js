@@ -3,6 +3,7 @@ const touches = [...document.querySelectorAll(".bouton")];
 const result = document.querySelector(".result");
 const calcul = document.querySelector(".calcul");
 const historique = document.querySelector(".historique");
+const egal = document.querySelector("#equal");
 
 let countCalcul = 0;
 
@@ -23,6 +24,11 @@ touches.forEach((touche) => {
       }
     } else if (event.target.id == "equal") {
       result.innerText = eval(calcul.innerText);
+      calcul.innerText = "";
+      result.style.fontWeight = "bold";
+      result.style.fontSize = "3rem";
+      result.style.color = "#f482b0";
+
       addHistory();
     } else {
       calcul.innerText += event.target.getAttribute("key");
