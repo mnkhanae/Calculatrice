@@ -24,12 +24,11 @@ touches.forEach((touche) => {
       }
     } else if (event.target.id == "equal") {
       result.innerText = eval(calcul.innerText);
+      addHistory();
       calcul.innerText = "";
       result.style.fontWeight = "bold";
       result.style.fontSize = "3rem";
       result.style.color = "#f482b0";
-
-      addHistory();
     } else {
       calcul.innerText += event.target.getAttribute("key");
       result.innerText = eval(calcul.innerText);
@@ -43,6 +42,10 @@ window.addEventListener("keyup", (event) => {
   if (event.key == "Enter") {
     result.innerText = eval(calcul.innerText);
     addHistory();
+    calcul.innerText = "";
+    result.style.fontWeight = "bold";
+    result.style.fontSize = "3rem";
+    result.style.color = "#f482b0";
   } else if (event.key == "Backspace") {
     calcul.innerText = calcul.innerText.slice(0, -1);
     if (calcul.innerText.length > 0) {
