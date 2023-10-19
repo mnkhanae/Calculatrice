@@ -15,10 +15,8 @@ Exercice incontournable pour travailler Javascript: la fameuse calculatrice!!
 - CSS
 - Javascript
 
-# Démo
-Voici le lien de la démo: 
-
 # Capture d'écran
+![Calculatricefullpage](https://github.com/mnkhanae/Calculatrice/assets/126266227/f33b859b-f1ff-484c-b1db-7a1f583c0797)
 
 
 
