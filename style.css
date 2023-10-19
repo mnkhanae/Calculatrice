@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(Cerisier-du-japon-japonais-Prunus-serrulata.jpg);
+  background-image: linear-gradient(to top, #d5dee7 0%, #ffafbd 0%, #c9ffbf 100%);
 }
 .calculatrice {
   /*background-color: rgb(175, 35, 70);*/
